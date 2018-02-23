@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lift Bro</string>
+
+    <string-array name="Experience">
+                  <item>Beginner</item>
+                  <item>Intermediate</item>
+                  <item>Veteran</item>
+    </string-array>
+
+</resources>

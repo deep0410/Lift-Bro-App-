@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create Profile"
+        android:id="@+id/lblProfile"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name:"
+        android:id="@+id/lblName"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/lblProfile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputName"
+        android:layout_alignTop="@+id/lblName"
+        android:layout_toRightOf="@+id/lblName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Age:"
+        android:id="@+id/lblAge"
+        android:layout_alignTop="@+id/inputAge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputAge"
+        android:layout_below="@+id/inputName"
+        android:layout_alignRight="@+id/inputName"
+        android:layout_alignEnd="@+id/inputName"
+        android:layout_alignLeft="@+id/inputName"
+        android:layout_alignStart="@+id/inputName"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Height (centimetres):"
+        android:id="@+id/lblHeight"
+        android:layout_below="@+id/inputAge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/inputHeight"
+        android:layout_below="@+id/inputAge"
+        android:layout_toRightOf="@+id/lblHeight"
+        android:layout_toEndOf="@+id/lblHeight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Weight (kilograms)"
+        android:id="@+id/lblWeight"
+        android:layout_below="@+id/inputHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputWeight"
+        android:layout_below="@+id/inputHeight"
+        android:layout_toRightOf="@+id/lblWeight"
+        android:layout_alignRight="@+id/inputHeight"
+        android:layout_alignEnd="@+id/inputHeight"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select your experience:"
+        android:id="@+id/lblExperience"
+        android:layout_below="@+id/inputWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/lblExperience"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/Experience"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Profile"
+        android:id="@+id/buttonProfile"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:onClick="ButtonProfileClicked"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttonBack"
+        android:layout_below="@+id/buttonProfile"
+        android:layout_centerHorizontal="true"
+        android:onClick="ButtonBackExClicked"/>
+
+</RelativeLayout>
